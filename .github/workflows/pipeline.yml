@@ -1,11 +1,12 @@
 name: Azure Petclinic CI/CD
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
       - develop
-  
+   
 jobs:
   criarInfra:
     runs-on: ubuntu-latest
