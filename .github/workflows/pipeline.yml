@@ -17,11 +17,11 @@ jobs:
 
       - name: Criar grupo de recursos
         run: |
-          az group create --location eastus --name FiapResourceGroup
+     #     az group create --location eastus --name FiapResourceGroup
 
       - name: Criar plano de serviço App Service (Linux)
         run: |
-          az appservice plan create -g FiapResourceGroup -n PlanoServicoSpring --is-linux --sku F1
+      #    az appservice plan create -g FiapResourceGroup -n PlanoServicoSpring --is-linux --sku F1
 
       - name: Criar Web App com Java 17
         run: |
